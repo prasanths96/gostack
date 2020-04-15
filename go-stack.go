@@ -68,8 +68,7 @@ func (s *stack) Size() int {
 }
 
 func (s *stack) PopBool() (val bool, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -82,8 +81,7 @@ func (s *stack) PopBool() (val bool, err error) {
 }
 
 func (s *stack) PopByte() (val byte, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -96,8 +94,7 @@ func (s *stack) PopByte() (val byte, err error) {
 }
 
 func (s *stack) PopComplex64() (val complex64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -110,8 +107,7 @@ func (s *stack) PopComplex64() (val complex64, err error) {
 }
 
 func (s *stack) PopComplex128() (val complex128, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -124,8 +120,7 @@ func (s *stack) PopComplex128() (val complex128, err error) {
 }
 
 func (s *stack) PopError() (val error, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -139,8 +134,7 @@ func (s *stack) PopError() (val error, err error) {
 
 // Floats
 func (s *stack) PopFloat32() (val float32, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -153,8 +147,7 @@ func (s *stack) PopFloat32() (val float32, err error) {
 }
 
 func (s *stack) PopFloat64() (val float64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -168,8 +161,7 @@ func (s *stack) PopFloat64() (val float64, err error) {
 
 // Ints
 func (s *stack) PopInt() (val int, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -182,8 +174,7 @@ func (s *stack) PopInt() (val int, err error) {
 }
 
 func (s *stack) PopInt8() (val int8, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -196,8 +187,7 @@ func (s *stack) PopInt8() (val int8, err error) {
 }
 
 func (s *stack) PopInt16() (val int16, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -210,8 +200,7 @@ func (s *stack) PopInt16() (val int16, err error) {
 }
 
 func (s *stack) PopInt32() (val int32, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -224,8 +213,7 @@ func (s *stack) PopInt32() (val int32, err error) {
 }
 
 func (s *stack) PopInt64() (val int64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -238,8 +226,7 @@ func (s *stack) PopInt64() (val int64, err error) {
 }
 
 func (s *stack) PopRune() (val rune, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -252,8 +239,7 @@ func (s *stack) PopRune() (val rune, err error) {
 }
 
 func (s *stack) PopUint() (val uint, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -266,8 +252,7 @@ func (s *stack) PopUint() (val uint, err error) {
 }
 
 func (s *stack) PopUint8() (val uint8, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -280,8 +265,7 @@ func (s *stack) PopUint8() (val uint8, err error) {
 }
 
 func (s *stack) PopUint16() (val uint16, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -294,8 +278,7 @@ func (s *stack) PopUint16() (val uint16, err error) {
 }
 
 func (s *stack) PopUint32() (val uint32, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -308,8 +291,7 @@ func (s *stack) PopUint32() (val uint32, err error) {
 }
 
 func (s *stack) PopUint64() (val uint64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -322,8 +304,7 @@ func (s *stack) PopUint64() (val uint64, err error) {
 }
 
 func (s *stack) PopUintptr() (val uintptr, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -336,8 +317,7 @@ func (s *stack) PopUintptr() (val uintptr, err error) {
 }
 
 func (s *stack) PopString() (val string, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Pop()
 	if err != nil {
@@ -352,8 +332,7 @@ func (s *stack) PopString() (val string, err error) {
 // ReadBool will return the top element of stack as bool
 // without popping it
 func (s *stack) ReadBool() (val bool, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -366,8 +345,7 @@ func (s *stack) ReadBool() (val bool, err error) {
 }
 
 func (s *stack) ReadByte() (val byte, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -380,8 +358,7 @@ func (s *stack) ReadByte() (val byte, err error) {
 }
 
 func (s *stack) ReadComplex64() (val complex64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -394,8 +371,7 @@ func (s *stack) ReadComplex64() (val complex64, err error) {
 }
 
 func (s *stack) ReadComplex128() (val complex128, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -408,8 +384,7 @@ func (s *stack) ReadComplex128() (val complex128, err error) {
 }
 
 func (s *stack) ReadError() (val error, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -423,8 +398,7 @@ func (s *stack) ReadError() (val error, err error) {
 
 // Floats
 func (s *stack) ReadFloat32() (val float32, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -437,8 +411,7 @@ func (s *stack) ReadFloat32() (val float32, err error) {
 }
 
 func (s *stack) ReadFloat64() (val float64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -453,8 +426,7 @@ func (s *stack) ReadFloat64() (val float64, err error) {
 // Ints
 
 func (s *stack) ReadInt() (val int, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -467,8 +439,7 @@ func (s *stack) ReadInt() (val int, err error) {
 }
 
 func (s *stack) ReadInt8() (val int8, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -481,8 +452,7 @@ func (s *stack) ReadInt8() (val int8, err error) {
 }
 
 func (s *stack) ReadInt16() (val int16, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -495,8 +465,7 @@ func (s *stack) ReadInt16() (val int16, err error) {
 }
 
 func (s *stack) ReadInt32() (val int32, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -509,8 +478,7 @@ func (s *stack) ReadInt32() (val int32, err error) {
 }
 
 func (s *stack) ReadInt64() (val int64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -523,8 +491,7 @@ func (s *stack) ReadInt64() (val int64, err error) {
 }
 
 func (s *stack) ReadRune() (val rune, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -537,8 +504,7 @@ func (s *stack) ReadRune() (val rune, err error) {
 }
 
 func (s *stack) ReadUint() (val uint, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -551,8 +517,7 @@ func (s *stack) ReadUint() (val uint, err error) {
 }
 
 func (s *stack) ReadUint8() (val uint8, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -565,8 +530,7 @@ func (s *stack) ReadUint8() (val uint8, err error) {
 }
 
 func (s *stack) ReadUint16() (val uint16, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -579,8 +543,7 @@ func (s *stack) ReadUint16() (val uint16, err error) {
 }
 
 func (s *stack) ReadUint32() (val uint32, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
+
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -593,8 +556,6 @@ func (s *stack) ReadUint32() (val uint32, err error) {
 }
 
 func (s *stack) ReadUint64() (val uint64, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -607,8 +568,6 @@ func (s *stack) ReadUint64() (val uint64, err error) {
 }
 
 func (s *stack) ReadUintptr() (val uintptr, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
@@ -621,8 +580,6 @@ func (s *stack) ReadUintptr() (val uintptr, err error) {
 }
 
 func (s *stack) ReadString() (val string, err error) {
-	s.mux.Lock()
-	defer s.mux.Unlock()
 	var ok bool
 	result, err := s.Read()
 	if err != nil {
